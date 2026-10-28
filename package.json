@@ -1,0 +1,12 @@
+{
+  "name": "misty-alphine-stay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Misty Alphine mountain stay website and booking admin",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

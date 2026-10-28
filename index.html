@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d12">
+  <meta name="description" content="A quieter kind of escape. Discover Misty Alphine, a collection of elevated tent stays tucked into the mountains.">
+  <title>Misty Alphine — Stay a little closer to the stars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="login-screen" id="loginScreen" aria-label="Sign in to Misty Alphine">
+      <div class="login-backdrop"></div>
+      <a class="brand login-brand" href="#" aria-label="Misty Alphine home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 36" fill="none"><path d="M3 31 16.8 7l7 12.1 4.4-7.5L39 31H3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m11 31 8.6-14.8L28.1 31M26.6 31l5.2-9 5.2 9" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-name">MISTY <span>ALPHINE</span></span>
+      </a>
+      <div class="login-card">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR MOUNTAIN ESCAPE AWAITS</div>
+        <h1>Come find<br>your <em>quiet.</em></h1>
+        <p class="login-copy">A little closer to the stars. A little further from everything else.</p>
+        <form id="loginForm">
+          <label for="guestName">YOUR NAME</label>
+          <input id="guestName" name="name" type="text" placeholder="How should we call you?" autocomplete="name" required>
+          <label for="guestEmail">EMAIL ADDRESS</label>
+          <input id="guestEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="button button-light login-submit" type="submit">Enter the night <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="login-footnote">A little preview of your stay · No account needed</p>
+      </div>
+      <div class="login-bottom"><span>9° 37′ N &nbsp;·&nbsp; 76° 59′ E</span><span>KUTTIKANAM &nbsp; / &nbsp; KERALA</span><a href="admin.html">ADMIN</a></div>
+    </section>
+
+    <section class="home-screen hidden" id="homeScreen">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Misty Alphine home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 42 36" fill="none"><path d="M3 31 16.8 7l7 12.1 4.4-7.5L39 31H3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m11 31 8.6-14.8L28.1 31M26.6 31l5.2-9 5.2 9" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-name">MISTY <span>ALPHINE</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#stay">The stay</a>
+          <a href="#experience">Experiences</a>
+          <a href="#location">Find us</a>
+        </nav>
+        <a class="button button-outline header-cta" href="#booking">Reserve your stay <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </header>
+
+      <section class="hero" id="home">
+        <div class="hero-photo"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="status-dot"></span> <span data-content="heroEyebrow">1,100 METRES ABOVE THE EVERYDAY</span></div>
+          <h1><span data-content="heroLineOne">Stay a little</span><br><span data-content="heroLineTwo">closer to the</span> <em><span data-content="heroHighlight">stars.</span></em></h1>
+          <p data-content="heroDescription">Somewhere between the pine-scented air and the open sky, you’ll find a stay that feels like it was made just for you.</p>
+          <a class="button button-light" href="#booking">Find your tent <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span class="note-line"></span><span data-content="heroLocation">IDUKKI HILLS, KERALA</span></div>
+        </div>
+        <div class="hero-bottom">
+          <span>01 — 03 &nbsp; / &nbsp; YOUR MOUNTAIN MOMENT</span>
+          <span class="scroll-hint">SCROLL TO WANDER <span aria-hidden="true">↓</span></span>
+        </div>
+        <span class="hero-index">31° 12′ N &nbsp;·&nbsp; 77° 16′ E</span>
+      </section>
+
+      <section class="intro section-wrap" id="stay">
+        <div class="intro-label"><span>01</span> &nbsp; THE STAY</div>
+        <div class="intro-content">
+          <h2><span data-content="introLineOne">For the nights</span><br><span data-content="introLineTwo">you’ll</span> <em><span data-content="introHighlight">never forget.</span></em></h2>
+          <p data-content="introDescription">Waking up to mountain light. Long conversations around a fire. The kind of quiet that stays with you long after you leave. This is the best of the outdoors, with all the little comforts of home.</p>
+          <div class="intro-stats">
+            <div><strong data-content="tentCount">12</strong><span>PRIVATE TENTS</span></div>
+            <div><strong><span data-content="elevation">1,100</span><span class="stat-unit"> m</span></strong><span>ABOVE SEA LEVEL</span></div>
+            <div><strong>∞</strong><span data-content="starStat">STARS, JUST FOR YOU</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stay-section section-wrap">
+        <div class="section-heading">
+          <div><div class="eyebrow" data-content="stayEyebrow">YOUR OWN LITTLE SOMEWHERE</div><h2><span data-content="stayHeading">Room to</span> <em><span data-content="stayHighlight">reconnect.</span></em></h2></div>
+          <p><span data-content="staySubheading">Three ways to make the mountains yours.</span><br><span data-content="stayDescription">Every one with a view worth staying in for.</span></p>
+        </div>
+        <div class="stay-grid">
+          <article class="stay-card stay-large">
+            <div class="stay-image image-dome"></div>
+            <div class="stay-details"><div><span class="stay-tag">MOST LOVED</span><h3 data-content="room1Name">The Alpine Dome</h3><p data-content="room1Description">Wake beneath the stars in your own private hideaway.</p></div><div class="stay-price">FROM <strong data-price="room1Price">₹8,500</strong><span> / NIGHT</span></div></div>
+          </article>
+          <article class="stay-card">
+            <div class="stay-image image-pine"></div>
+            <div class="stay-details"><div><h3 data-content="room2Name">The Pine Tent</h3><p data-content="room2Description">Tucked between the trees. Made for two.</p></div><div class="stay-price">FROM <strong data-price="room2Price">₹6,500</strong><span> / NIGHT</span></div></div>
+          </article>
+          <article class="stay-card">
+            <div class="stay-image image-summit"></div>
+            <div class="stay-details"><div><span class="stay-tag tag-warm">A LITTLE EXTRA</span><h3 data-content="room3Name">The Summit Suite</h3><p data-content="room3Description">More room, more sky, your own private deck.</p></div><div class="stay-price">FROM <strong data-price="room3Price">₹11,000</strong><span> / NIGHT</span></div></div>
+          </article>
+        </div>
+        <p class="price-note" data-content="stayNote">Thoughtful little things come standard: breakfast, bonfire evenings &amp; all the mountain air you can breathe.</p>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <div class="experience-photo"></div>
+        <div class="experience-content">
+          <div class="eyebrow"><span class="status-dot"></span> <span data-content="experienceEyebrow">MAKE A NIGHT OF IT</span></div>
+          <h2><span data-content="experienceLineOne">Less itinerary.</span><br><em><span data-content="experienceHighlight">More feeling.</span></em></h2>
+          <p data-content="experienceDescription">Follow the trail, not the clock. Out here, the best moments don’t need a schedule.</p>
+          <div class="experience-list">
+            <div><span class="experience-icon">✳</span><span><strong data-content="experience1Title">Under a sky full of stars</strong><small data-content="experience1Description">Stargazing, with blankets and hot chocolate.</small></span><span class="list-arrow">↗</span></div>
+            <div><span class="experience-icon">⌁</span><span><strong data-content="experience2Title">Stories around the fire</strong><small data-content="experience2Description">Every evening, as the mountains turn blue.</small></span><span class="list-arrow">↗</span></div>
+            <div><span class="experience-icon">↟</span><span><strong data-content="experience3Title">Take the scenic way</strong><small data-content="experience3Description">Guided pine forest walks, just outside your door.</small></span><span class="list-arrow">↗</span></div>
+            <div><span class="experience-icon">☼</span><span><strong data-content="experience4Title">Breakfast, with a view</strong><small data-content="experience4Description">Slow mornings. Fresh local flavours.</small></span><span class="list-arrow">↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-section section-wrap" id="booking">
+        <div class="booking-copy"><div class="eyebrow" data-content="bookingEyebrow">A DATE WITH THE MOUNTAINS</div><h2><span data-content="bookingLineOne">Your tent</span><br><span data-content="bookingLineTwo">is</span> <em><span data-content="bookingHighlight">waiting.</span></em></h2><p data-content="bookingPrompt">Pick a few dates. We’ll take care of the rest.</p><div class="booking-assurance"><span>✦</span> <span data-content="bookingAssurance">No booking fees. Just the good stuff.</span></div></div>
+        <form class="booking-card" id="bookingForm">
+          <div class="booking-card-top"><div><span class="eyebrow" data-content="bookingFormEyebrow">MAKE IT YOURS</span><h3 data-content="bookingFormTitle">Find your night</h3></div><span class="booking-card-mark">↗</span></div>
+          <div class="booking-fields">
+            <label>CHECK IN<input type="date" id="checkIn" required></label>
+            <label>CHECK OUT<input type="date" id="checkOut" required></label>
+          </div>
+          <label class="full-label">YOUR NAME<input type="text" id="bookingName" name="guestName" autocomplete="name" maxlength="100" placeholder="Name for the reservation" required></label>
+          <label class="full-label">EMAIL ADDRESS<input type="email" id="bookingEmail" name="guestEmail" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label>
+          <label class="full-label">PHONE (OPTIONAL)<input type="tel" id="bookingPhone" name="guestPhone" autocomplete="tel" maxlength="30" placeholder="+91"></label>
+          <label class="full-label">YOUR STAY<select id="tentType"><option value="The Alpine Dome">The Alpine Dome · ₹8,500/night</option><option value="The Pine Tent">The Pine Tent · ₹6,500/night</option><option value="The Summit Suite">The Summit Suite · ₹11,000/night</option></select></label>
+          <label class="full-label">GUESTS<select id="guestCount"><option>2 guests</option><option>1 guest</option><option>3 guests</option><option>4 guests</option></select></label>
+          <button type="submit" class="button button-light booking-submit">Send booking request <span aria-hidden="true">↗</span></button>
+          <p class="booking-response" id="bookingResponse" aria-live="polite"></p>
+          <p class="booking-caption" data-content="bookingCaption">This preview doesn’t submit or confirm a reservation.</p>
+        </form>
+      </section>
+
+      <section class="location-section" id="location">
+        <div class="location-photo"></div>
+        <div class="location-content"><div class="eyebrow"><span class="status-dot"></span> <span data-content="locationEyebrow">A WORLD AWAY. NOT VERY FAR.</span></div><h2><span data-content="locationLineOne">Somewhere in</span><br><span data-content="locationLineTwo">the</span> <em><span data-content="locationHighlight">Idukki hills.</span></em></h2><p data-content="locationDescription">High above the rush, among the green, tree-covered hills of Kuttikanam in Idukki, Kerala. Follow the scent of cardamom into the cool mountain air.</p><a class="text-link" href="https://maps.google.com/?q=Kuttikanam+Idukki+Kerala" target="_blank" rel="noreferrer">Find your way here <span aria-hidden="true">↗</span></a><div class="location-facts"><span data-content="locationFactOne">KUTTIKANAM, IDUKKI</span><span data-content="locationFactTwo">KERALA, INDIA</span></div></div>
+      </section>
+
+      <section class="quote-section"><span class="quote-mark">“</span><blockquote data-content="quote">We came for a night. We stayed long enough to remember what quiet feels like.</blockquote><span class="quote-credit">A NOTE FROM THE MOUNTAINS</span><div class="quote-dots"><span class="active"></span><span></span><span></span></div></section>
+
+      <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 36" fill="none"><path d="M3 31 16.8 7l7 12.1 4.4-7.5L39 31H3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m11 31 8.6-14.8L28.1 31M26.6 31l5.2-9 5.2 9" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></span><span class="brand-name">MISTY <span>ALPHINE</span></span></a><p data-content="footerTagline">A little closer to the stars.</p><span class="footer-end">MADE WITH MOUNTAIN AIR &nbsp;·&nbsp; © 2025 MISTY ALPHINE &nbsp; <a href="admin.html">ADMIN</a></span></footer>
+    </section>
+  </main>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

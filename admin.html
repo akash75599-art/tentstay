@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d12">
+  <title>Admin — Misty Alphine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+  <header class="admin-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 36" fill="none"><path d="M3 31 16.8 7l7 12.1 4.4-7.5L39 31H3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m11 31 8.6-14.8L28.1 31M26.6 31l5.2-9 5.2 9" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg></span>
+      <span class="brand-name">MISTY <span>ALPHINE</span></span>
+    </a>
+    <div class="admin-header-actions">
+      <a class="button button-outline" href="index.html">View website <span aria-hidden="true">↗</span></a>
+      <button class="button button-outline hidden" type="button" id="logoutButton">Sign out</button>
+    </div>
+  </header>
+  <main class="admin-main">
+    <section class="admin-login" id="adminLogin">
+      <div class="admin-intro">
+        <div class="eyebrow"><span class="status-dot"></span> PRIVATE ADMIN AREA</div>
+        <h1>Welcome <em>back.</em></h1>
+        <p>Sign in securely to manage your booking requests and stay details.</p>
+      </div>
+      <p class="admin-status" id="adminStatus" role="status" aria-live="polite"></p>
+      <form class="admin-login-card" id="loginForm">
+        <label class="editor-field">USERNAME<input type="text" name="username" autocomplete="username" maxlength="128" required></label>
+        <label class="editor-field">PASSWORD<input type="password" name="password" autocomplete="current-password" maxlength="1024" required></label>
+        <button class="button button-light" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+        <p>Your password is never stored in the website or sent to the browser’s local storage.</p>
+      </form>
+    </section>
+
+    <section class="admin-dashboard hidden" id="adminDashboard">
+      <div class="admin-intro">
+        <div class="eyebrow"><span class="status-dot"></span> PRIVATE ADMIN AREA</div>
+        <h1>Your <em>mountain stay.</em></h1>
+        <p>Review booking requests, update your website details, and upload your own stay photos.</p>
+      </div>
+      <p class="admin-status" id="dashboardStatus" role="status" aria-live="polite"></p>
+      <section class="bookings-section">
+        <div class="bookings-heading">
+          <div><span class="eyebrow">GUEST ENQUIRIES</span><h2>Booking requests</h2></div>
+          <button class="button button-outline" type="button" id="refreshBookings">Refresh</button>
+        </div>
+        <div class="booking-list" id="bookingList" aria-live="polite"></div>
+      </section>
+
+      <section class="site-editor">
+        <div class="editor-heading"><span class="eyebrow">SHAPE THE STAY</span><h2>Website details</h2><p>Changes save to the website database and appear for all visitors.</p></div>
+        <p class="admin-status" id="editorStatus" role="status" aria-live="polite"></p>
+        <div class="image-editor">
+          <div class="editor-heading"><span class="eyebrow">YOUR PHOTOGRAPHS</span><h3>Stay images</h3><p>Upload JPG, PNG, or WebP images up to 4 MB each.</p></div>
+          <div class="image-grid" id="imageFields"></div>
+        </div>
+        <form class="admin-form" id="adminForm">
+          <div id="editorFields"></div>
+          <div class="admin-actions">
+            <button class="button button-light" type="submit">Save changes <span aria-hidden="true">↗</span></button>
+            <button class="button button-outline" type="button" id="resetButton">Restore default text</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script src="content.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
